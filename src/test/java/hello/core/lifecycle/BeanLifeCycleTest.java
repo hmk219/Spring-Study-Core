@@ -30,8 +30,13 @@ public class BeanLifeCycleTest {
 }
 
 /*
-출력결과 :
+실행 결과 :
 생성자 호출, url = null
-connect: null
-call: null message = 초기화 연결 메시지
+NetworkClient.init
+connect: http://hello-spring.dev
+call: http://hello-spring.dev message = 초기화 연결 메시지
+19:40:50.269 [main] DEBUG
+org.springframework.context.annotation.AnnotationConfigApplicationContext -
+Closing NetworkClient.close
+close + http://hello-spring.dev
 */
